@@ -1,0 +1,8 @@
+<div ng-repeat="num in [1,2,3]">
+    <button ng-click="hide=!hide">Toggle</button>
+
+    <div my-if="!hide" style="display: inline-block">
+        <app-clock></app-clock>
+        <button ng-click="$ctrl.run()">Click me</button>
+    </div>
+</div>
